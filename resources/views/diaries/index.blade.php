@@ -7,7 +7,8 @@
     <title>Diary</title>
 </head>
 <body>
-    
+<x-navigation></x-navigation>
+
 <h1>Visi diensgrāmatas ieraksti</h1>
 
 <ul>

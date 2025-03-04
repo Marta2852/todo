@@ -1,3 +1,109 @@
-h1{
-    color: pink;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbe9f1; /* Very soft baby pink background */
+}
+
+/* Header Styles */
+header {
+    background-color: #ffb6c1; /* Soft baby pink header */
+    padding: 20px 0;
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #ffb6c1; /* Same soft baby pink as header */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #ff99b3; /* A slightly darker baby pink on hover */
+}
+
+/* Active link style */
+nav ul li a.active {
+    background-color: #ff80a5; /* A soft pink for active link */
+}
+
+/* h1 Styling */
+h1 {
+    color: #ffb6c1; /* Baby pink for h1 */
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+/* Paragraph Styles */
+p {
+    color: #ffb6c1; /* Soft baby pink text */
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.6; /* Comfortable line spacing */
+    text-align: center; /* Center-aligned text */
+    margin: 20px auto; /* Space above and below the paragraph */
+    max-width: 600px; /* Optional: limit the width of the paragraph for better readability */
+    padding: 0 15px; /* Optional: some padding on left and right */
+}
+
+/* Hover effect for links within <p> */
+p a {
+    color: #ff80a5; /* Soft pink for links inside paragraphs */
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+p a:hover {
+    color: #ff99b3; /* A slightly darker pink on hover */
+}
+
+/* h3 Styling */
+h3 {
+    color: #ffb6c1; /* Soft baby pink for h3 */
+    text-align: center;
+    font-size: 1.4rem; /* Slightly smaller font size than h1, but still prominent */
+    margin-top: 30px;
+    font-weight: normal; /* Slightly lighter text for h3 */
+}
+
+/* List Styling */
+ol {
+    padding-left: 40px; /* Padding for the ordered list */
+    margin: 0 auto;
+}
+
+/* List Item (li) Styling */
+li {
+    margin: 12px 0; /* Spacing between list items */
+    font-size: 1.1rem; /* Slightly larger text for better readability */
+    line-height: 1.7; /* Increased line height for clarity */
+    color: #333; /* Darker text color for better contrast */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffb6c1; /* Same soft pink footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
 }
