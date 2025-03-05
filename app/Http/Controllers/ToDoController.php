@@ -15,6 +15,10 @@ class ToDoController extends Controller
         return view("todos.show", compact("todo"));
 }
 
+    public function store(){
+        dd("Metode store izsaukta");
+    }
+
 }
 
 

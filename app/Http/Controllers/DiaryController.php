@@ -11,7 +11,7 @@ class DiaryController extends Controller
         return view("diaries.index", compact("diaries"));
     }
 
-    public function show(Diary $dairy){
+    public function show(Diary $diary){
         return view("diaries.show", compact("diary"));
 }
 }
