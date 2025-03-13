@@ -107,3 +107,139 @@ footer {
     padding: 10px 0;
     margin-top: 50px;
 }
+
+/* Form Styling */
+.blog-form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the form stays within its container */
+    overflow: hidden; /* Prevent overflow from inside the form */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-field, .textarea-field {
+    width: 100%;
+    padding: 12px; /* Added padding to make input fields less tight */
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #fafafa;
+    box-sizing: border-box; /* Ensure padding and border don't affect the width */
+    resize: none; /* Disable resizing of textarea */
+}
+
+.input-field:focus, .textarea-field:focus {
+    border-color: #ff80a5; /* Soft pink focus border */
+    outline: none;
+}
+
+.textarea-field {
+    height: 150px;
+}
+
+.error-message {
+    color: #ff4d4d; /* Red color for error messages */
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    background-color: #ff80a5; /* Soft pink button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ff4d4d; /* Darker pink on hover */
+}
+
+/* Prevent Input Fields from Overflowing */
+input, textarea {
+    overflow: hidden; /* Prevent input fields from overflowing */
+    resize: none; /* Disable resizing for both input and textarea */
+}
+
+/* General form styles */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #ffb6c1;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box; /* Makes sure padding is included in width */
+}
+
+.form-group input:focus {
+    border-color: #ffb6c1;
+    outline: none;
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff4d4d; /* Red for errors */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #ff99b3; /* Darker pink on hover */
+}
+
+.submit-button:focus {
+    outline: none;
+}

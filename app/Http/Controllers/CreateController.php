@@ -10,4 +10,5 @@ class CreateController extends Controller
     {
         return view('todos.create');
     }
+
 }

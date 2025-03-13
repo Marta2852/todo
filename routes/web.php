@@ -19,5 +19,8 @@ Route::get('/todos/{todo}', [ToDoController::class, 'show']);
 Route::post('/todos', [ToDoController::class, 'store']);
 
 Route::get('/diaries', [DiaryController::class, 'index']);
+Route::get('/diaries/create', [CreateController::class, 'createDiary']);
 Route::get('/diaries/{diary}', [DiaryController::class, 'show']);
+Route::post('/diaries', [DiaryController::class, 'store']);
+
 
