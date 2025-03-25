@@ -15,8 +15,7 @@ class DiaryController extends Controller
         return view("diaries.show", compact("diary"));
 }
 
-public function createDiary()
-    {
+public function createDiary(){
         return view('diaries.create');
     }
 
@@ -26,12 +25,32 @@ public function store(Request $request){
         "body" => ["required"],
         "date" => ["required", "date"]
       ]);
-    ToDo::create([
+    Diary::create([
         "title" => $validated["title"],
         "body" => $validated["body"],
         "date" => $validated["date"],
-        "completed" => false
       ]);
       return redirect("/diaries");
 }
+
+public function edit(Diary $diary){
+    return view("diaries.edit", compact("diary"));
+}
+
+public function update(Request $request, Diary $diary){
+    $validated = $request->validate([
+        "title" => ["required", "max:255"],
+        "body" => ["required"],
+        "date" => ["required", "date"],
+    ]);
+
+    $diary->update([
+        "title" => $validated["title"],
+        "body" => $validated["body"],
+        "date" => $validated["date"],
+    ]);
+
+    return redirect('/diaries');
+}
+
 }

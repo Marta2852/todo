@@ -1,4 +1,3 @@
-
 <x-layout>
   <x-slot:title>
     Visi veicamie uzdevumi
@@ -13,5 +12,3 @@
 
 </x-layout>
     
-</body>
-</html>

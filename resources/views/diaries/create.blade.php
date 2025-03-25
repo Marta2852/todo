@@ -1,9 +1,9 @@
 <x-layout>
-    <x-slot:title>Izveidot bloga ierakstu</x-slot:title>
+    <x-slot:title>Izveidot die­nas­grāmatas ierakstu</x-slot:title>
 
-    <h1 class="page-title">Izveidot bloga ierakstu</h1>
+    <h1 class="page-title">Izveidot die­nas­grāmatas ierakstu</h1>
 
-    <form method="POST" action="/blogs" class="blog-form">
+    <form method="POST" action="/diaries" class="form-container">
         @csrf
 
         <div class="form-group">
