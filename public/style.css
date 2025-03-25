@@ -266,3 +266,16 @@ input, textarea {
     background-color: #ff80a5; /* Darker pink */
 }
 
+.container {
+    max-width: 600px; /* Adjust width */
+    margin: 0 auto;   /* Center the form */
+    padding: 20px;
+}
+
+.diary-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
