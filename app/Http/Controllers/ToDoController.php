@@ -49,7 +49,7 @@ public function create(){
         return redirect('/todos');
     }
 
-    public function destroy(ToDo $ToDo){
+    public function destroy(ToDo $todo){
         $todo->delete();
         return redirect("/todos");
     }

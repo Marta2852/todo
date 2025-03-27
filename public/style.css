@@ -251,20 +251,37 @@ input, textarea {
     margin-top: 20px;
 }
 
-.edit-button {
+/* Ensure both buttons change the cursor */
+.edit-button,
+.delete-button {
     display: inline-block;
-    padding: 8px 15px;
+    padding: 10px 20px;
     background-color: #ffb6c1; /* Soft pink */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     margin-right: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer; /* Ensure cursor changes on hover for both */
 }
 
-.edit-button:hover {
-    background-color: #ff80a5; /* Darker pink */
+/* Hover effect */
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #ff80a5; /* Darker pink on hover */
 }
+
+
+/* Ensure the buttons behave the same when focused or active */
+.edit-button:focus,
+.delete-button:focus {
+    background-color: #ff80a5; /* Same dark pink when focused */
+}
+
 
 
 

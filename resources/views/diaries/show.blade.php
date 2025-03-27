@@ -8,6 +8,13 @@
 
   <div class="button-container">
     <a href="/diaries/{{ $diary->id }}/edit" class="edit-button">Rediģēt</a>
+
+    <form action="/diaries/{{ $diary->id }}" method="POST">
+    @csrf
+    @method('DELETE')
+    <button type="submit" class="delete-button">Dzēst</button>
+</form>
+
   </div>
 
 </x-layout>

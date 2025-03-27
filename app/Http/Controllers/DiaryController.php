@@ -53,4 +53,9 @@ public function update(Request $request, Diary $diary){
     return redirect('/diaries');
 }
 
+public function destroy(Diary $diary){
+    $diary->delete();
+    return redirect("/diaries");
+}
+
 }

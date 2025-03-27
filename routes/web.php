@@ -28,5 +28,7 @@ Route::get('/diaries/{diary}', [DiaryController::class, 'show']);
 Route::post('/diaries', [DiaryController::class, 'store']);
 Route::get('/diaries/{diary}/edit', [DiaryController::class, 'edit']);
 Route::put('/diaries/{diary}', [DiaryController::class, 'update']);
+Route::delete('/diaries/{diary}', [DiaryController::class, 'destroy']);
+
 
 

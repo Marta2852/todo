@@ -7,6 +7,14 @@
 
   <div class="button-container">
     <a href="/todos/{{ $todo->id }}/edit" class="edit-button">Rediģēt</a>
-  </div>
+
+    <form action="/todos/{{ $todo->id }}" method="POST">
+    @csrf
+    @method('DELETE')
+    <button type="submit" class="delete-button">Dzēst</button>
+</form>
+
+    
+</div>
 </x-layout>
 
