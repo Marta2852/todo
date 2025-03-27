@@ -5,6 +5,7 @@
   
   <h1>{{ $diary->title }}</h1>
   <p>{{ $diary->body }}</p>
+  <p>{{ $diary->date }}</p>
 
   <div class="button-container">
     <a href="/diaries/{{ $diary->id }}/edit" class="edit-button">Rediģēt</a>
