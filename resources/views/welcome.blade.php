@@ -21,8 +21,11 @@
     @endauth
 
     @guest
-        <p>Sveiks, viesi!</p>
-        <a href="/login">Pieslēgties</a>
+        <div class="auth-container">
+            <p>Sveiks, viesi!</p>
+            <a href="/login" class="auth-link">Pieslēgties</a>
+            <a href="/register" class="auth-link">Reģistrēties</a>
+        </div>
     @endguest
 </body>
 </html>

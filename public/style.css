@@ -282,6 +282,28 @@ input, textarea {
     background-color: #ff80a5; /* Same dark pink when focused */
 }
 
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Adjust the height to center vertically */
+    text-align: center;
+}
 
+.auth-container a {
+    margin: 10px 0; /* Space between the links */
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #ffb6c1;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container a:hover {
+    background-color: #ff99b3;
+}
 
 
