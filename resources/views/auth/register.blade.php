@@ -1,54 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reģistrēties</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Reģistrēties</h1>
+    <x-navigation />
 
-    <form action="/register" method="POST">
-    @csrf
+    <div class="form-container">
+        <h1 style="text-align: center; color: #ffb6c1;">Reģistrēties</h1>
 
-    @if ($errors->any())
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-    @endif
+        @if ($errors->any())
+            <ul style="color: #ff4d4d; padding-left: 20px;">
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
 
-    <div>
-        <label for="first_name">Vārds:</label>
-        <input type="text" id="first_name" name="first_name" value="{{ old('first_name') }}" required>
+        <form action="/register" method="POST">
+            @csrf
+
+            <div class="form-group">
+                <label for="first_name">Vārds:</label>
+                <input type="text" id="first_name" name="first_name" value="{{ old('first_name') }}" required class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Uzvārds:</label>
+                <input type="text" id="last_name" name="last_name" value="{{ old('last_name') }}" required class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-pasts:</label>
+                <input type="email" id="email" name="email" value="{{ old('email') }}" required class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Parole:</label>
+                <input type="password" id="password" name="password" required class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="password_confirmation">Apstiprināt paroli:</label>
+                <input type="password" id="password_confirmation" name="password_confirmation" required class="input-field">
+            </div>
+
+            <button type="submit" class="submit-button">Reģistrēties</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 15px;">
+            Jau ir konts? <a href="/login">Pieslēgties</a>
+        </p>
     </div>
-
-    <div>
-        <label for="last_name">Uzvārds:</label>
-        <input type="text" id="last_name" name="last_name" value="{{ old('last_name') }}" required>
-    </div>
-
-    <div>
-        <label for="email">E-pasts:</label>
-        <input type="email" id="email" name="email" value="{{ old('email') }}" required>
-    </div>
-
-    <div>
-        <label for="password">Parole:</label>
-        <input type="password" id="password" name="password" required>
-    </div>
-
-    <div>
-        <label for="password_confirmation">Paroles konfirmācija:</label>
-        <input type="password" id="password_confirmation" name="password_confirmation" required>
-    </div>
-
-    <div>
-        <button type="submit">Reģistrēties</button>
-    </div>
-</form>
-
-
 </body>
 </html>

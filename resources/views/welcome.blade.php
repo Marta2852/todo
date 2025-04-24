@@ -10,21 +10,10 @@
     <x-navigation></x-navigation>
     <h1>Sveiks, Laravel!</h1>
 
-    @auth
-        <p>Sveiks, {{ Auth::user()->first_name}}</p>
-        
-
-        <form action="/logout" method="POST" style="display: inline;">
-            @csrf
-            <button type="submit">Izrakstīties</button>
-        </form>
-    @endauth
 
     @guest
         <div class="auth-container">
             <p>Sveiks, viesi!</p>
-            <a href="/login" class="auth-link">Pieslēgties</a>
-            <a href="/register" class="auth-link">Reģistrēties</a>
         </div>
     @endguest
 </body>
